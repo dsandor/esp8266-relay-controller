@@ -1,5 +1,5 @@
-#include <ESP8266WiFi.h>
-#include <ESP8266mDNS.h>
+#include <pfodESP8266WiFi.h>
+//#include <ESP8266mDNS.h>
 
 const char* ssid = "";
 const char* password = "";
@@ -20,11 +20,13 @@ void setup() {
     delay(25);
   }
 
+  /*
   if (!MDNS.begin("fanswitch")) {
     while(1) { 
       delay(100);
     }
   }
+  */
   
   server.begin();
 }
